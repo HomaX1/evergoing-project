@@ -1,0 +1,82 @@
+.header {
+  height: 1167px;
+  background: url("../../../img/home_image.jpg") no-repeat;
+  background-size: contain;
+
+  &-top {
+    max-width: 75%;
+    display: flex;
+    margin: 0 auto;
+
+    &__wrap {
+      background-color: $WHITERGBA;
+      padding: 20px 0;
+    }
+
+    &__logo {
+      width: 270px;
+      height: 65px;
+      display: inline-block;
+      background: url("../../../img/logo.png") no-repeat;
+      margin-right: 100px;
+      cursor: pointer;
+    }
+
+    &__shop {
+      width: 16px;
+      height: 16px;
+      margin-top: 24px;
+      cursor: pointer;
+    }
+  }
+}
+
+.brands {
+  height: 40px;
+  margin-top: 10px;
+  flex-grow: 0.5;
+
+  &__item {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-grow: 0.5;
+
+  &__input {
+    width: 140px;
+    font: 12px $fontFamily;
+    padding-left: 10px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    left: 130px;
+    bottom: 24px;
+    cursor: pointer;
+  }
+}
+
+.phone__icon, .search__icon, .header-top__shop {
+  font-size: 16px;
+}
+
+.phone {
+  margin: 0 auto;
+
+  &__text {
+    font: bold 12px $fontFamily;
+  }
+}
