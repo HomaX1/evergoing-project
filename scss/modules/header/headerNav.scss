@@ -1,4 +1,92 @@
 .header-nav {
-  width: 500px;
+  max-width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
 
+.nav-title {
+  width: 280px;
+  display: flex;
+  justify-content: flex-start;
+  border-top: 70px solid $BLACKRGBA;
+  border-right: 50px solid transparent;
+  position: relative;
+
+  &__text, &__icon {
+    position: absolute;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    font: 20px $fontFamily;
+    color: $WHITE;
+    margin-left: 20px;
+    top: -50px;
+  }
+
+  &__icon {
+    font-size: 12px;
+    color: $WHITE;
+    top: -43px;
+    left: 250px;
+  }
+}
+
+.list {
+  width: 280px;
+  height: 272px;
+  background-color: $BLACKRGBA;
+  position: relative;
+
+  &__item {
+    padding: 20px;
+    cursor: pointer;
+
+    &_active {
+      background-color: $BLACKRGBA;
+    }
+
+    &_active .inside-list {
+      display: block;
+    }
+  }
+
+  &__item .inside-list {
+    display: none;
+  }
+}
+
+.list__item, .inside-list__item {
+  list-style-type: none;
+}
+
+.item__text, .inside-list__item-text {
+  font: 16px $fontFamily;
+  color: $WHITE;
+}
+
+.item {
+  &__icon {
+    font-size: 12px;
+    color: $WHITE;
+  }
+
+  &__text {
+    margin-right: 5px;
+  }
+}
+
+.inside-list {
+
+  width: 280px;
+  height: 272px;
+  background-color: $BLACKRGBADARK;
+  position: absolute;
+  left: 280px;
+  top: 0;
+
+  &__item {
+    margin: 20px;
+  }
 }
