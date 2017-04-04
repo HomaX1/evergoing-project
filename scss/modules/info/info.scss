@@ -1,0 +1,34 @@
+.info {
+  position: relative;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__background {
+    width: 76%;
+    position: absolute;
+    top: 0;
+    border-top: 150px solid $WHITERGBA;
+    border-right: 150px solid transparent;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 30px;
+    left: 165px;
+
+    &-title {
+      text-transform: uppercase;
+      font: bold 20px $fontFamily;
+      color: $BLACK;
+      margin-bottom: 30px;
+    }
+
+    &-paragraph {
+      font: 14px $fontFamily;
+      color: $BLACK;
+    }
+  }
+}
