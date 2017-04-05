@@ -1,8 +1,4 @@
 .header {
-  height: 1167px;
-  background: url("../../../img/home_image.jpg") no-repeat;
-  background-size: cover;
-
   &-top {
     max-width: 1015px;
     display: flex;
@@ -69,14 +65,23 @@
   }
 }
 
-.phone__icon, .search__icon, .header-top__shop {
+.phone__icon, .search__icon .fa, .header-top__shop .fa {
   font-size: 16px;
+  color: $BLACK;
+  transition: color 0.2s;
 }
 
 .phone {
   margin: 0 auto;
 
   &__text {
+    text-decoration: none;
     font: bold 12px $fontFamily;
+    color: $BLACK;
+    transition: color 0.2s;
   }
+}
+
+.phone:hover .phone__text, .phone:hover .phone__icon, .search__icon .fa:hover, .header-top__shop .fa:hover {
+  color: $GRAY;
 }

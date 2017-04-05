@@ -1,0 +1,12 @@
+/*
+height: 1167px;
+background: url("../../../img/home_image.jpg") no-repeat;
+background-size: cover;*/
+
+.slide {
+  &__img {
+    width: 2000px;
+    height: 1167px;
+    background-size: cover;
+  }
+}
