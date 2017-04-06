@@ -1,11 +1,14 @@
 .header {
+  background-color: $WHITERGBA;
+  position: relative;
+  z-index: 3;
+
   &-top {
     max-width: 1015px;
     display: flex;
     margin: 0 auto;
 
     &__wrap {
-      background-color: $WHITERGBA;
       padding: 20px 0;
     }
 

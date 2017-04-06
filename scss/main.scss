@@ -6,9 +6,10 @@
 @import "base/variables";
 
 /*modules*/
-@import "modules/header/headerTop";
-@import "modules/header/headerNav";
+@import "modules/header/header";
+@import "modules/navigation/navigation";
 @import "modules/slide/slide";
 @import "modules/categories/categories";
 @import "modules/info/info";
 @import "modules/footer/footer";
+@import "modules/about/about";

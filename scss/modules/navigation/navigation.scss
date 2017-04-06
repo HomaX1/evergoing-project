@@ -1,8 +1,14 @@
-.header-nav {
-  max-width: 1015px;
-  margin: 0 auto;
+.top-navigation {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  z-index: 2;
+
+  &__wrap {
+    width: 1015px;
+    margin: 0 auto;
+  }
 }
 
 .nav-title {
@@ -12,14 +18,16 @@
   border-top: 70px solid $BLACKRGBA;
   border-right: 70px solid transparent;
   position: relative;
+  cursor: pointer;
 
   &__text, &__icon {
     position: absolute;
   }
 
   &__text {
+    text-decoration: none;
     text-transform: uppercase;
-    font: 20px $fontFamily;
+    font: 18px $fontFamily;
     color: $WHITE;
     margin-left: 20px;
     top: -50px;
@@ -34,6 +42,7 @@
 }
 
 .list {
+  display: none;
   width: 280px;
   height: 272px;
   background-color: $BLACKRGBA;
