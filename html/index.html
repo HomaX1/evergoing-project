@@ -29,10 +29,12 @@
                     <i class="phone__icon fa fa-phone" aria-hidden="true"></i>
                     <a class="phone__text" href="tel:+18887270166">1.888.727.0166</a>
                 </div>
-                <input class="search__input" type="text" placeholder="search">
-                <a class="search__icon">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </a>
+                <form class="search-form" action="#">
+                    <input class="search-form__input" type="text" placeholder="search">
+                    <button class="search-form__icon">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
             </div>
             <a class="header-top__shop">
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -47,71 +49,71 @@
             <h3 class="nav-title__text">Product Categories</h3>
             <i class="nav-title__icon fa fa-chevron-down" aria-hidden="true"></i>
         </a>
-        <ul class="list">
-            <li class="list__item">
-                <div class="item">
+        <nav class="list">
+            <div class="list__item">
+                <a class="item">
                     <span class="item__text">Boating & marine</span>
                     <i class="item__icon fa fa-chevron-right" aria-hidden="true"></i>
-                </div>
-                <ul class="inside-list">
-                    <li class="inside-list__item">
+                </a>
+                <nav class="inside-list">
+                    <a class="inside-list__item" href="#">
                         <span class="inside-list__item-text">Sport boats</span>
-                    </li>
-                    <li class="inside-list__item">
+                    </a>
+                    <a class="inside-list__item" href="#">
                         <span class="inside-list__item-text">Dinghies</span>
-                    </li>
-                    <li class="inside-list__item">
+                    </a>
+                    <a class="inside-list__item" href="#">
                         <span class="inside-list__item-text">River rafts</span>
-                    </li>
-                    <li class="inside-list__item">
+                    </a>
+                    <a class="inside-list__item" href="#">
                         <span class="inside-list__item-text">Pontoons</span>
-                    </li>
-                    <li class="inside-list__item">
+                    </a>
+                    <a class="inside-list__item" href="#">
                         <span class="inside-list__item-text">Personal fishing watercraft</span>
-                    </li>
-                    <li class="inside-list__item">
+                    </a>
+                    <a class="inside-list__item" href="#">
                         <span class="inside-list__item-text">Accessories</span>
-                    </li>
-                </ul>
-            </li>
-            <li class="list__item">
-                <div class="item">
+                    </a>
+                </nav>
+            </div>
+            <div class="list__item">
+                <a class="item">
                     <span class="item__text">Fishing</span>
                     <i class="item__icon fa fa-chevron-right" aria-hidden="true"></i>
-                </div>
-                <ul class="inside-list">
-                    <li class="inside-list__item">
+                </a>
+                <nav class="inside-list">
+                    <a class="inside-list__item" href="#">
                         <span class="inside-list__item-text">Fly</span>
-                    </li>
-                    <li class="inside-list__item">
+                    </a>
+                    <a class="inside-list__item" href="#">
                         <span class="inside-list__item-text">Conventional</span>
-                    </li>
-                    <li class="inside-list__item">
+                    </a>
+                    <a class="inside-list__item" href="#">
                         <span class="inside-list__item-text">Ice</span>
-                    </li>
-                </ul>
-            </li>
-            <li class="list__item">
-                <div class="item">
+                    </a>
+                </nav>
+            </div>
+            <div class="list__item">
+                <a class="item">
                     <span class="item__text">Home goods</span>
                     <i class="item__icon fa fa-chevron-right" aria-hidden="true"></i>
-                </div>
-                <ul class="inside-list">
-                    <li class="inside-list__item">
+                </a>
+                <nav class="inside-list">
+                    <a class="inside-list__item" href="#">
                         <span class="inside-list__item-text">Personal care</span>
-                    </li>
-                    <li class="inside-list__item">
+                    </a>
+                    <a class="inside-list__item" href="#">
                         <span class="inside-list__item-text">Kitchen</span>
-                    </li>
-                </ul>
-            </li>
-            <li class="list__item">
-                <div class="item">
+                    </a>
+                </nav>
+            </div>
+            <div class="list__item">
+                <a class="item" href="/html/manufacturing.html">
                     <span class="item__text">Custom manufacturing</span>
                     <i class="item__icon fa fa-chevron-right" aria-hidden="true"></i>
-                </div>
-            </li>
-        </ul>
+                </a>
+            </div>
+        </nav>
     </div>
 </section>
 
@@ -120,8 +122,8 @@
     <img class="slide__img" src="/img/home_image.jpg">
 </section>
 
-<section class="categories-wrap">
-    <div class="categories">
+<main class="main-content">
+    <section class="categories">
         <p class="categories__text">Quia voluptam enditatur audanda eperspe repudaest, nobis ma comnis doluptatur?
             Aximus deliqui illoria nones nosti dolupti volorestrum re entin nimperi aut iniscimenti dolo
             blatus. Lenia ped et libus, sus vitate quatur, eum volupta ectium et qui quia prerrov idellup tasint volut
@@ -168,8 +170,8 @@
                 </div>
             </a>
         </div>
-    </div>
-</section>
+    </section>
+</main>
 
 <section class="info">
     <img class="info__img" src="/img/info_img.jpg" alt="#">
@@ -195,7 +197,7 @@
                 <span class="vertical-line">|</span>
                 <a class="navigation__item" href="#">Oem</a>
                 <span class="vertical-line">|</span>
-                <a class="navigation__item" href="#">Contact</a>
+                <a class="navigation__item" href="/html/contact.html">Contact</a>
             </nav>
             <div class="icons">
                 <a class="icons__item" href="#">
