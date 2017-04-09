@@ -12,7 +12,7 @@
 }
 
 .nav-title {
-  width: 280px;
+  width: 350px;
   display: flex;
   justify-content: flex-start;
   border-top: 70px solid $BLACKRGBA;
@@ -49,7 +49,7 @@
 .list {
   display: none;
   width: 280px;
-  height: 272px;
+  height: 248px;
   background-color: $BLACKRGBA;
 
   &__item {

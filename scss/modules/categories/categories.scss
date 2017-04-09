@@ -1,19 +1,15 @@
 .main-content {
   background-color: $WHITE;
-  margin-top: -105px;
+  width: 1015px;
+  margin: -105px auto 0;
+  padding-top: 20px;
 }
 
-.categories {
-  width: 1015px;
-  margin: 0 auto;
-  padding-top: 20px;
-
-  &__text {
+  .categories__text {
     font: 14px $fontFamily;
     color: $BLACK;
     margin-bottom: 20px;
   }
-}
 
 .category-item, .category-item__link, .category-item__link-img {
   height: 254px;
@@ -50,7 +46,7 @@
     }
 
     &__background {
-      width: 350px;
+      width: 390px;
       position:absolute;
       top: 0;
       border-top: 50px solid $WHITERGBA;

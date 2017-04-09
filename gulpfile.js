@@ -35,7 +35,7 @@ gulp.task('sass', function () {
 
 //html
 gulp.task('html', function () {
-    gulp.src('./html/*.html')
+    gulp.src('./*.html')
         .pipe(connect.reload());
 });
 
@@ -43,7 +43,7 @@ gulp.task('html', function () {
 //watch
 gulp.task('watch', function () {
     gulp.watch('./scss/**/*.scss', ['sass']);
-    gulp.watch('./html/*.html', ['html']);
+    gulp.watch('./*.html', ['html']);
 });
 
 

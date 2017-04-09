@@ -27,6 +27,17 @@
     justify-content: space-between;
     margin: 0 auto;
 
+    &__item::after {
+      content: "|";
+      color: $WHITE;
+      margin-left: 6px;
+    }
+
+    &__item:last-child::after {
+      content: "";
+      margin-left: 0;
+    }
+
     &__address, &__tel, &__fax, &__email {
       text-decoration: none;
       font: 12px $fontFamily;
@@ -44,9 +55,20 @@
   display: flex;
   justify-content: space-between;
   flex-grow: 0.2;
+
+  &__item::after {
+    content: "|";
+    color: $WHITE;
+    margin-left: 27px;
+  }
 }
 
-.navigation__item, .vertical-line {
+.navigation__item:last-child::after {
+  content: "";
+  margin-left: 0;
+}
+
+.navigation__item {
   text-decoration: none;
   text-transform: uppercase;
   font: 16px $fontFamily;
@@ -70,8 +92,4 @@
     color: $WHITE;
     transition: color 0.2s;
   }
-}
-
-.vertical-line_font {
-  font: 12px $fontFamily;
 }
