@@ -1,0 +1,110 @@
+.boats {
+  border-bottom: 1px solid $FUNBLUE;
+  margin-bottom: 30px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &-top-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-top {
+    flex-grow: 1;
+
+    &__title {
+      text-transform: uppercase;
+      font: bold 18px $fontFamily;
+      margin-bottom: 10px;
+    }
+  }
+
+  &-top__title, &__text{
+    color: $BLACK;
+
+  }
+
+  &__text {
+    font: 14px $fontFamily;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.button_background {
+  width: 20%;
+  text-transform: uppercase;
+  background-color: $BOTTICELLI;
+  font: bold 14px $fontFamily;
+  color: $BLACK;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $WHITE;
+  }
+}
+
+.product-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product, .options {
+  width: 49%;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__item:first-child {
+    width: 100%;
+    height: 288px;
+  }
+
+  &__item {
+    width: 31.33%;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+
+  &-item-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0.2;
+    flex-wrap: wrap;
+  }
+
+  &-item {
+    width: 49%;
+  }
+}
+
+.options-info {
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__title, &__text {
+    font: 14px $fontFamily;
+    color: $BLACK;
+  }
+
+  &__text {
+    text-transform: none;
+  }
+}
+
+.button__options {
+  align-self: flex-end;
+  width: 41%;
+  margin: 0;
+}
