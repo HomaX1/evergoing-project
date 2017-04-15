@@ -1,0 +1,36 @@
+.better-living {
+  border-bottom: 1px solid $FUNBLUE;
+  margin-bottom: 30px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font: bold 18px $fontFamily;
+    margin-bottom: 10px;
+  }
+
+  &__title, &__text {
+    color: $BLACK;
+  }
+
+  &__text {
+    font: 14px $fontFamily;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.product {
+
+  &__item_height:first-child {
+    height: 450px;
+  }
+
+  &__item_height {
+    width: 48%;
+    height: 200px;
+  }
+}
