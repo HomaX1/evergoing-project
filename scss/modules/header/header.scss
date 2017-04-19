@@ -93,3 +93,38 @@
 .search__text:hover, .search-form__icon .fa:hover, .header-top__shop .fa:hover {
   color: $GRAY;
 }
+
+
+@media (max-width: 869px) {
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+
+    &__shop {
+      position: relative;
+      top: -63px;
+      left: 80px;
+    }
+  }
+
+  .search__text {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  .header-top {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 421px) {
+  .brands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search {
+    margin-top: 65px;
+  }
+}

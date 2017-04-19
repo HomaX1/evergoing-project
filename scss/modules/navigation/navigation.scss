@@ -12,7 +12,7 @@
 }
 
 .nav-title {
-  width: 350px;
+  width: 320px;
   display: flex;
   justify-content: flex-start;
   border-top: 70px solid $BLACKRGBA;
@@ -42,7 +42,7 @@
     font-size: 12px;
     color: $WHITE;
     top: -43px;
-    left: 250px;
+    left: 230px;
   }
 }
 
@@ -113,3 +113,24 @@
     }
   }
 }
+
+
+@media (min-width: 992px) and (max-width: 1023px) {
+  .top-navigation__wrap {
+    width: 992px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .top-navigation__wrap {
+    width: 768px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .top-navigation__wrap {
+    width: 320px;
+  }
+}
+
+
