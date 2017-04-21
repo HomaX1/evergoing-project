@@ -96,10 +96,10 @@
 }
 
 .inside-list {
-  width: 280px;
+  width: 250px;
   background-color: $BLACKRGBADARK;
   position: absolute;
-  left: 280px;
+  left: 250px;
   top: 0;
 
   &__item {
@@ -126,6 +126,13 @@
     width: 768px;
   }
 }
+
+/*@media (max-width: 700px) {
+  .inside-list {
+    left: 0;
+    top: 248px;
+  }
+}*/
 
 @media (min-width: 320px) and (max-width: 767px) {
   .top-navigation__wrap {
