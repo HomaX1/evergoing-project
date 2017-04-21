@@ -111,3 +111,29 @@
     background-color: $GRAY;
   }
 }
+
+
+@media (max-width: 1023px) {
+  .contacts {
+    flex-direction: column;
+    align-items: center;
+
+    &-us {
+      margin-bottom: 30px;
+    }
+  }
+
+  .contacts-us, .questions {
+    width: 90%;
+  }
+
+  .connection-item {
+     width: 27%;
+   }
+}
+
+@media (max-width: 767px) {
+  .connection-item {
+    width: 47%;
+  }
+}
